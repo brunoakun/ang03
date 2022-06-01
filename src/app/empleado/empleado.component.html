@@ -1,1 +1,7 @@
-<p>Aquí va el empleado {{nombre}} {{edad +1}} {{edad+1<18 ?'Menor de edad':'Mayor de edad'}}</p>
+<p>Aquí va el empleado {{nombre.value}} {{edad +1}} {{edad+1<18 ?'Menor de edad':'Mayor de edad'}}</p>
+
+
+        <label>Type nombre:
+            <input type="text" #nombre>
+        </label>
+        <input type="button" value="cambiar" (click)="cambiaNombre(nombre.value)">

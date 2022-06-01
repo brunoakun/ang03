@@ -9,20 +9,26 @@ import { Component, OnInit } from '@angular/core';
 export class EmpleadoComponent implements OnInit {
 
   // ATRIBUTOS de la clase Empleado 
-  _nombre = 'Bruno';
+  //_nombre = 'Bruno';
   _edad = 5;
+  //nombre = '';
 
   constructor() {
   }
 
   // GETTERS Y SETTERS
-  get nombre(): string { return this._nombre; }
+  //get nombre(): string { return this._nombre; }
   get edad(): number { return this._edad; }
 
-  // METODOS0
+
+  // METODOS
 
   ngOnInit(): void {
     console.log(this.edad);
+  }
+
+  cambiaNombre(nombre: string): string {
+    return (nombre);
   }
 
 }
