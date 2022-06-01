@@ -2,6 +2,8 @@
 
 
         <label>Type nombre:
-            <input type="text" #nombre>
+            <input type="text" #nombre [disabled]="textoDisabled">
+            <input type="text" #nombre2 value={{textoDisabled}}>
         </label>
         <input type="button" value="cambiar" (click)="cambiaNombre(nombre.value)">
+        <input type="button" value="disable" (click)="cambiaPropiedad()">

@@ -13,6 +13,8 @@ export class EmpleadoComponent implements OnInit {
   _edad = 5;
   //nombre = '';
 
+  textoDisabled = false;    // Binding
+
   constructor() {
   }
 
@@ -29,6 +31,10 @@ export class EmpleadoComponent implements OnInit {
 
   cambiaNombre(nombre: string): string {
     return (nombre);
+  }
+
+  cambiaPropiedad(): void {
+    this.textoDisabled = !this.textoDisabled;
   }
 
 }
